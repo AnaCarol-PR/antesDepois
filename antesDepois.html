@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <style type="text/css">
+        body{
+            background-image: url(img/PraiaBoqueirao.jpg) ; 
+            background-size: contain;
+        }
+
+        ul{
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            text-decoration-style: double;
+            color: rgb(0, 0, 0);
+            font-size: 100 px;
+            font-style: oblique;
+            padding: 15px;
+            display: block;
+        }
+       
+        .index{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(25, 50px);
+            grid-row-gap: 1em;
+            grid-column-gap: 1em;
+        }
+        .centro{
+            border-style: solid 2px;
+            font-variant: small-caps;
+            font-family: 'Gill Sans';
+            font-style: italic;
+            font-size: 65px;
+            grid-column-start: 1;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            padding-top: 20px;
+            text-align: center;           
+        }
+        
+        .menu{
+            border:solid rgb(9, 255, 21) 2px;
+            background-image:linear-gradient(rgb(0, 255, 213), white);
+            border-radius: 10px;
+            grid-column-start: 3;
+            grid-column-end: 6;
+            grid-row-start: 3;
+            grid-row-end: 4; 
+            text-align: center;
+        }
+        
+        .main1{
+            background-image: linear-gradient(rgb(223, 222, 162),rgb(168, 123, 39));
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 25px;
+            display: inline;
+            font-style: italic;
+            font-size: 17px;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 6;
+            grid-row-end: 15;           
+        }
+        img{
+            border-radius: 25px;
+            align-items: center;
+        }
+
+        .main2{
+            background-image: linear-gradient(rgb(223, 222, 162),rgb(168, 123, 39));
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 25px;
+            display: inline;
+            font-style: italic;
+            font-size: 17px;
+            grid-column-start: 5;
+            grid-column-end: 7;
+            grid-row-start: 6;
+            grid-row-end: 15;           
+        }
+
+        .main3{
+            background-image: linear-gradient(rgb(223, 222, 162),rgb(168, 123, 39));
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 25px;
+            display: inline;
+            font-style: italic;
+            font-size: 17px;
+            grid-column-start: 3;
+            grid-column-end: 6;
+            grid-row-start: 16;
+            grid-row-end: 24; 
+            overflow-y: scroll;          
+        }
+        .rodape{
+            background-image:linear-gradient(rgb(0, 255, 213), white);
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 25px;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 8;
+            grid-row-start: 24;
+            grid-row-end: 25;
+            padding-top: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="index">
+        <div class="centro"> Venha para a Praia Grande!</div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#praia">Menu</a></li>
+                    <li><a href="#iemanja">Festividades</a> </li>
+                    <li><a href="#palacio">Cultura</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main1">
+            <img src="img/foto-orla-da-praia.jpg"  width="505" height="350" alt="Extenção de parte da praia">
+            <p id="praia">
+                A cidade de Praia Grande tem uma das praias mais movimentadas do Brasil, tendo sido eleita pelo Ministério do Turismo como a quarta cidade que mais recebe turistas no país durante a temporada de verão, depois de São Paulo, Rio de Janeiro e Florianópolis. Na alta temporada recebe cerca de 1,86 milhão de turistas (mais de cinco vezes a sua população fixa). A cidade também teve uma rápida expansão, com crescimento de 56 000 habitantes entre 2000 e 2009, recebendo, em 2015, o título de "a cidade que mais cresce no Brasil".Sua população estimada para 1.º de julho de 2019 era de 325 073 habitantes.
+            </p>
+        </div>
+        <div class="main2">
+            <img src="img/Festa-de-Iemanja.jpg"  width="505" height="350" alt="Festa de Iemanjá">
+            <p id="iemanja">
+                Os tradicionais Festejos de Iemanjá de Praia Grande, considerado o maior de todo o estado, iniciam neste fim de semana. Milhares de fiéis e simpatizantes da Rainha do Mar estarão na faixa de areia entre os bairros Mirim e Caiçara para a celebração que ocorre nos dias 30 de novembro, 1, 7 e 8 de dezembro. A cerimônia de abertura ocorre neste sábado, às 20 horas, na faixa de areia em frente à estátua de Iemanjá, no Bairro Mirim.
+            </p>
+
+        </div>
+        <div class="main3">
+            <img src="img/palaciodaArtes.jpg"  width="765" height="350" alt="palaciodaArtes">
+            <p id="palacio">
+                O complexo cultural de seis mil metros quadrados é um dos mais importantes da região. Sua fachada é neoclássica e, por dentro, o projeto segue o estilo contemporâneo com espaços amplos. O andar térreo abriga um Salão de Eventos, com capacidade para 600 pessoas.
+
+                O acesso é central, com recepção e hall expositivo, e tem como destaque o lustre gigante, com doze mil pedras de cristal e 120 lâmpadas, a uma altura de 3,20 metros e com 2,60 metros de largura, compondo formas que remetem à figura do arlequim, personagem da antiga comédia italiana. O lustre faz alusão ao clássico filme O Fantasma da Ópera.
+
+                No andar superior, há uma exposição permanente de esculturas. O Complexo Cultural abriga três importantes equipamentos do município: a Galeria Nilton Zanotti, o Museu da Cidade e o Teatro Serafim Gonzalez.
+            </p>
+        </div>
+        <div class="rodape">Todos os Direitos Reservados &reg Natureza </div> 
+    </div>   
+        
+
+</body>
+</html>
